@@ -17,10 +17,9 @@ topMenuEL.style.height = "100%";
 topMenuEL.style.backgroundColor = "#0e9aa7";
 topMenuEL.classList.add("flex-around");
 
-const topMenuEl = document.getElementById("topMenu");
 menuLinks.forEach((link) => {
   const newLink = document.createElement("a");
   newLink.href = link.href;
   newLink.textContent = link.text;
-  topMenuEl.appendChild(newLink);
+  topMenuEL.appendChild(newLink);
 });
